@@ -13,9 +13,9 @@ namespace prjCrossword
             //string strVertWord = "ПОЛУХА";
 
             //string[] strHorWords = { "СМЕХ", "ЛЮЩ", "ПОТОК", "ЛЕЛУШ", "БУЛКО", "БУПХ" };
-            //string[] strHorWords = { "БУЛКА", "ПОТОК", "ПЛЮЩ", "БУМ", "СМЕХ" };
+            string[] strHorWords = { "БУЛКА", "ПОТОК", "ПЛЮЩ", "БУМ", "СМЕХ" };
             //string[] strHorWords = { "СМЕХ", "ЛЮЩ", "ПОТОК", "БУЛКО", "БУПХ" };
-            string[] strHorWords = { "ПОТОК", "БУЛКО", "БУМ","ПЛЮЩУ", "СМЕХ" };
+            //string[] strHorWords = { "ПОТОК", "БУЛКО", "БУМ","ПЛЮЩУ", "СМЕХ" };
 
             //================================================================================
 
@@ -168,21 +168,6 @@ namespace prjCrossword
             }
 
             return strUsedWords;
-        }
-
-        static int GetLetterPosition(string strWord, char letter)
-        {
-            //Функция вычисляет позицию в слове, на которой стоит буква
-            for (int i = 0; i < strWord.Length; i++)
-            {
-                char currLetter = strWord[i];
-                if (currLetter == letter)
-                {
-                    return i;
-                }
-            }
-
-            return 0;
         }
     }
 }
